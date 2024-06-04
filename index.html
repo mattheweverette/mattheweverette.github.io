@@ -4,50 +4,105 @@
         <title>E3 Visualization</title>
     </head>
     <style>
-        .box {
-            display: flex;
+        body {
+            background-color: darkslategray;
+        }
+        .card {
+            background-color: white;
+            margin: 5vw;
+
         }
         .gif {
-            width: 25vw;
-            gap: 5%;
+            width: 500px;
         }
+        .layout {
+            background-color: white;
+          
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+          
+            justify-content: center;
+            align-items: center;
+          }
+          h1 {
+            text-align: center;
+            padding: 20px;
+          }
+          h2 {
+            text-align: center;
+          }
     </style>
     <body>
-        <section>
-            <h3>Polarization ellipses</h3>
-            <div class="box">
-                <img class="gif" src="assets/vsh3m3.gif"/>
-                <img class="gif" src="assets/vsh3m2.gif"/>
-                <img class="gif" src="assets/vsh3m1.gif"/>
-                <img class="gif" src="assets/vsh30.gif"/>
-                <img class="gif" src="assets/vsh31.gif"/>
-                <img class="gif" src="assets/vsh32.gif"/>
-                <img class="gif" src="assets/vsh33.gif"/>
-            </div>
-            <h3>Magnitude of the electric field</h3>
-            <div class="box">
-                <img class="gif" src="assets/vsh3m3_polarization.gif"/>
-                <img class="gif" src="assets/vsh3m2_polarization.gif"/>
-                <img class="gif" src="assets/vsh3m1_polarization.gif"/>
-                <img class="gif" src="assets/vsh30_polarization.gif"/>
-                <img class="gif" src="assets/vsh31_polarization.gif"/>
-                <img class="gif" src="assets/vsh32_polarization.gif"/>
-                <img class="gif" src="assets/vsh33_polarization.gif"/>
-            </div>
-        </section>
-        <section>
-            <h3>Polarization ellipses</h3>
-            <div class="box">
-                <img class="gif" src="assets/vsh1m1.gif"/>
-                <img class="gif" src="assets/vsh10.gif"/>
-                <img class="gif" src="assets/vsh11.gif"/>
-            </div>
-            <h3>Magnitude of the electric field</h3>
-            <div class="box">
-                <img class="gif" src="assets/vsh1m1_polarization.gif"/>
-                <img class="gif" src="assets/vsh10_polarization.gif"/>
-                <img class="gif" src="assets/vsh11_polarization.gif"/>
-            </div>
-        </section>
+        <div class="card">
+            <h1><u>j = 3</u></h1>
+            <section class="layout">
+                <div>
+                    <h2>m = -3</h2>
+                    <img class="gif" src="assets/vsh3m3.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh3m3_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = -2</h2>
+                    <img class="gif" src="assets/vsh3m2.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh3m2_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = -1</h2>
+                    <img class="gif" src="assets/vsh3m1.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh3m1_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 0</h2>
+                    <img class="gif" src="assets/vsh30.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh30_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 1</h2>
+                    <img class="gif" src="assets/vsh31.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh31_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 2</h2>
+                    <img class="gif" src="assets/vsh32.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh32_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 3</h2>
+                    <img class="gif" src="assets/vsh33.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh33_polarization.gif"/>
+                </div>
+            </section>
+        </div>
+        <div class="card"> 
+            <h1><u>j = 1</u></h1>
+            <section class="layout">
+                <div>
+                    <h2>m = -1</h2>
+                    <img class="gif" src="assets/vsh1m1.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh1m1_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 0</h2>
+                    <img class="gif" src="assets/vsh10.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh10_polarization.gif"/>
+                </div>
+                <div>
+                    <h2>m = 1</h2>
+                    <img class="gif" src="assets/vsh11.gif"/>
+                    <br/>
+                    <img class="gif" src="assets/vsh11_polarization.gif"/>
+                </div>
+            </section>
+        </div>
     </body>
 </html>
