@@ -18,6 +18,21 @@
       .rejected {
         color: red;
       }
+      @keyframes YIPPEE {
+        0% {background-color: red;}
+        9% {background-color: orange;}
+        25% {background-color: yellow;}
+        42% {background-color: green;}
+        58% {background-color: blue;}
+        75% {background-color: indigo;}
+        92% {background-color: violet;}
+        100% {background-color: red;}
+      }
+      .yippee {
+        animation-name: YIPPEE;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
     </style>
   </head>
   <body>
@@ -39,7 +54,7 @@
         <td><span class="rejected">rejected (3/10)</span></td>
       </tr>
       <tr>
-        <td>Boulder</td>
+        <td class="yippee">Boulder</td>
         <td><span class="accepted">accepted (1/31)</span></td>
       </tr>
       <tr>
